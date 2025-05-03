@@ -18,7 +18,7 @@ class CULaneDataset(Dataset):
         for line in lines:
             line = line.strip()
             img_path = os.path.join(self.root_dir, line)
-            mask_path = img_path.replace('driver_', 'laneseg_label_w16/driver_').replace('.jpg', '.png')
+            mask_path = os.path.join(self.root_dir, line.replace("driver_", "laneseg_label_w16/driver_").replace(".jpg", ".png"))
             samples.append((img_path, mask_path))
         return samples
 

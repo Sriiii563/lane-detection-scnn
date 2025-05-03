@@ -8,10 +8,10 @@ class Config:
     device = torch.device('cuda' if use_gpu else 'cpu')
 
     # ==== Dataset ====
-    dataset_root = os.path.join('data', 'CULane')  # Update path if needed
-    train_split = 'list/train_gt.txt'
-    val_split = 'list/val_gt.txt'
-    test_split = 'list/test.txt'
+    dataset_root = "/home/kciri/scnn-lane-detection/data/CULane" # Update path if needed
+    train_list = '/home/kciri/scnn-lane-detection/data/CULane/list/train_gt.txt'
+    val_list = '/home/kciri/scnn-lane-detection/data/CULane/list/val_gt.txt'
+    test_list = '/home/kciri/scnn-lane-detection/data/CULane/list/test.txt'
 
     image_width = 1640
     image_height = 590

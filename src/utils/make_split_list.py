@@ -45,6 +45,6 @@ def generate_split_lists(dataset_root, output_dir, train_ratio=0.8, val_ratio=0.
 # Customize this with your actual path
 if __name__ == "__main__":
     generate_split_lists(
-        dataset_root="D:/CULane",      # Adjust to match your folder
-        output_dir="D:/CULane/list",   # Folder to save txt files
+        dataset_root="/home/kciri/scnn-lane-detection/data/CULane",      # Adjust to match your folder
+        output_dir="/home/kciri/scnn-lane-detection/data/CULane/list",   # Folder to save txt files
     )
